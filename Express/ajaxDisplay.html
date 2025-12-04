@@ -1,0 +1,30 @@
+
+<html>
+<head>
+    <script>
+        function getData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost:3000/students/", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                    var students = JSON.parse(xhr.responseText);
+
+                    var str = "<table border='1'><tr><td>ID</td><td>Name</td><td>Course</td></tr>";
+
+                    for (var stud of students) {
+                        str += "<tr><td>" + stud.sid + "</td><td>" + stud.sname + "</td><td>" + stud.course + "</td></tr>";
+                    }
+                    str += "</table>";
+                    document.getElementById("d1").innerHTML = str;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="getData()">Fetch Students List</button>
+    <div id="d1"></div>
+</body>
+</html>
