@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        var a = prompt("Enter first number")
+        var b = prompt("Enter second numder")
+        var op = prompt("Enter the operator ")
+        switch(op){
+            case '+':
+                //by default prompt takes the variable as string we need to type cast to number to add numbers
+                //we need only for addition as + is used here
+                document.write("Addition :"+ (Number(a)+Number(b)))
+                break
+            case '-':
+                document.write("Subtraction :"+(a-b))
+                break
+            case '*':
+                document.write("Multiplication:"+(a*b))
+                break
+            case '/':
+                document.write("Divison:"+(a/b))
+                break
+            case '%':
+                document.write("Modulus:"+(a%b))
+                break
+        }
+    </script>
+    
+</body>
+</html>

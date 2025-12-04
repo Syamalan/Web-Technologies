@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        var num = prompt("Enter the number")
+        var sum =0
+        var i = Number(num)
+
+        while(i>0){
+            dig = i%10
+            sum+=dig
+            i=parseInt(i/10)//here it results the accurate with floating value to get only quotient we need to convert float to int
+        }
+        document.write("Sum:"+sum)
+    </script>
+    
+</body>
+</html>

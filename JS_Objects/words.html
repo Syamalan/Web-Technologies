@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    var words=[]
+    var i,j;
+        function getWords(){
+        for(i=0;i<4;i++){
+            var word = prompt("Enter Word")
+            words[i]=word
+        }
+        document.writeln("Array is :<br> "+words.join(" ")+"<br>")
+        document.writeln("<br> Array elements in even index and starts with 'A' or 'a'<br> ")
+        for(j=0;j<words.length;j++){
+            if(parseInt((words[j].length)%2)==0){
+                if(words[j].startsWith('A')||words[j].startsWith('a'))
+                    document.writeln(words[j])
+            }
+           
+        }
+    }
+    
+    
+    </script>
+</head>
+<body>
+    <script>
+        getWords()
+    </script>
+    
+</body>
+</html>

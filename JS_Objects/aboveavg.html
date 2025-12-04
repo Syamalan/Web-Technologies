@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+        var arr = [11,22,33,44,55,66,77,88,99,111]
+        var sum=0
+        var c=0
+        for(ele of arr){
+            sum+=ele
+            c++
+        }
+        var avg=(sum/c)
+        document.writeln("Average of elements in array "+avg+"<br>")
+        document.writeln("Numbers above the avg are : <br>")
+        var ct=0
+        for(ele of arr){
+            if(ele>avg){
+                document.writeln(ele)
+                ct++
+            }
+        }
+        document.writeln("<br> Numbers above the avg are : <br>"+ct)
+
+        
+    </script>
+    
+</body>
+</html>

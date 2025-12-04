@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function Employee(eid,ename,sal){
+            this.eid=eid
+            this.ename=ename
+            this.sal=sal
+        }
+        
+    </script>
+</head>
+<body>
+    <script>
+        // var arr= {
+        //     e1:new Employee(1,"Syamala",2000),
+        //     e2: new Employee(2,"Harika",4000),
+        //     e3:new Employee(3,"Saranya",8000),
+        //     e4:new Employee(4,"GR",20000)
+        // }
+        var arr = [
+            new Employee(1, "Syamala", 2000),
+            new Employee(2, "Harika", 4000),
+            new Employee(3, "Saranya", 8000),
+            new Employee(4, "GR", 20000)
+        ];
+        str=""
+        str+="<table border='1'>"
+        str+="<tr><th>Emp ID</th><th>Emp Name</th><th>Emp Salary</th></tr>"
+        for(ele of arr){
+            str+="<tr><td>"+ ele.eid + "</td><td>"+ ele.ename +"</td><td>" +ele.sal+"</td></tr>"
+        }
+        str+="</table>"
+        document.writeln(str)
+
+
+    </script>
+    
+</body>
+</html>
