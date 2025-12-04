@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function validate() {
+            var num = document.getElementById('i').value
+            if (num < 0 || num > 1000){
+                document.getElementById('output').innerHTML = "Entered Number is Out of range"
+                return false
+            }
+            document.getElementById('output').innerHTML = " "
+
+        return true
+        }
+        function getSum() {
+            var num = document.getElementById('i').value
+            var sum = 0
+            var temp=num
+            while (num > 0) {
+                dig = (num % 10)
+                sum += dig
+
+                num = parseInt(num / 10)
+            }
+            document.getElementById('output').innerHTML = "Sum of Digits of "+temp+" is "+sum
+
+        }
+        function validateAndCalculate() {
+            if (validate()) {
+                getSum();
+                return false;  // prevent actual form submission
+            }
+            return false;  // prevent submission if invalid
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <form onsubmit="return validateAndCalculate()">
+        <label>Enter Integer</label>
+        <input id="i">
+        <input type="submit" value="Get sum">
+    </form>
+    <span id="output"> </span>
+
+</body>
+
+</html>

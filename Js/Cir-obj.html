@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function circle(){
+        var rad=document.getElementById("r").value
+        // document.writeln(rad)
+        var area=Math.PI*rad*rad
+        var circ=2*Math.PI*rad
+        document.getElementById("p1").innerHTML= area.toPrecision(4)
+        document.getElementById("p2").innerHTML= circ.toPrecision(4)
+        // document.writeln(ar)
+    }
+</script>
+</head>
+<body>
+  
+
+   
+    <form>
+        Enter Radius:
+        <input type="text" id="r"></input><br>
+
+        <input type="button" value="display" onclick="circle()"><br>
+        <!-- //result shows in next line as p is block level element -->
+        <!-- Area:<p id="p1"></p>
+
+        Circumference:<p id="p2"> </p> -->
+        Area:<span id="p1"></span><br>
+
+        Circumference:<span id="p2"> </span>
+    </form>
+    
+</body>
+</html>
