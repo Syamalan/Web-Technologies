@@ -1,0 +1,23 @@
+[
+    {
+    "bID":"10",
+    "bname":"JAVA",
+    "author":"Syamala",
+    "price":500},
+     {
+    "bID":"20",
+    "bname":"Python",
+    "author":"Harika",
+    "price":400},
+     {
+    "bID":"30",
+    "bname":"Angular",
+    "author":"Saranya",
+    "price":700},
+     {
+    "bID":"40",
+    "bname":".NET",
+    "author":"Lohitha",
+    "price":800}
+    
+]

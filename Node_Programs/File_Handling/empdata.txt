@@ -1,0 +1,4 @@
+1:Syamala:Sales:20000
+2:Saiki:Dev:30000
+3:Saranya:Tester:40000
+4:Harika:Admin:50000

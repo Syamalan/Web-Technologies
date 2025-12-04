@@ -1,0 +1,4 @@
+10|JAVA|Syamala|500|450
+20|Python|Harika|400|360
+30|Angular|Saranya|700|630
+40|.NET|Lohitha|800|720

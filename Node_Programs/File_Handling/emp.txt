@@ -1,0 +1,4 @@
+1001:Saranya:Sales:15000
+1002:Syamala:Deve:23000
+1003:Saiki:Sales:40000
+

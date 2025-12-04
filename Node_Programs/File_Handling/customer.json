@@ -1,0 +1,22 @@
+[
+    {
+    "CName":"Syamala",
+    "Address":"Guntur",
+    "PhNo":"9951012595",
+    "Rating":9.5},
+    {
+    "CName":"Harika",
+    "Address":"Guntur",
+    "PhNo":"0051012595",
+    "Rating":7.5},
+    {
+    "CName":"Saranya",
+    "Address":"Godavari",
+    "PhNo":"9851012595",
+    "Rating":8},
+    {
+    "CName":"Devadatta",
+    "Address":"Guntkal",
+    "PhNo":"9751012595",
+    "Rating":8}
+]
