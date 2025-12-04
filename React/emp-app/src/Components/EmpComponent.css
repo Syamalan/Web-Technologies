@@ -1,0 +1,17 @@
+/* .emp-component {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+} */
+
+.emp-card{
+    color: black;
+    padding: auto;
+    text-align: justify;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    min-width: 450px;
+
+
+}
